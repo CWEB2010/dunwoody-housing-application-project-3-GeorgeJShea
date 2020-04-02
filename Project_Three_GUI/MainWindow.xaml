@@ -1,12 +1,24 @@
-﻿<Window x:Class="Project_Three_GUI.MainWindow"
+<Window x:Class="WhereYouBelong.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Project_Three_GUI"
+        xmlns:local="clr-namespace:WhereYouBelong"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Dunwoody Housing Managment Software" Height="450" Width="800">
     <Grid>
-        
+        <!-- this is a simple black box-->
+        <ScrollBar Visibility="Hidden">
+        </ScrollBar>
+        <Rectangle x:Name="blackBox" HorizontalAlignment="Left" Height="100" Margin="113,57,0,0" Stroke="Blue" VerticalAlignment="Top" Width="100" Fill="Black"/>
+
+        <Rectangle x:Name="blueBox" HorizontalAlignment="Left" Height="100" Margin="24,57,0,0" Stroke="Blue" VerticalAlignment="Top" Width="100" Fill="Blue" Visibility="Hidden"/>
+        <!-- this button move the black box using ||insert function name here||-->
+        <Button x:Name="buttonOne" Content="Tab One" HorizontalAlignment="Left" Margin="8,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.564,0.496" Click="tabOneButton"/>
+        <Button x:Name="buttonTwo" Content="Tab Two" HorizontalAlignment="Left" Margin="56,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.595,0.632" Click="tabTwoButton"/>
+        <Button x:Name="entryButton" Content=" Enter " HorizontalAlignment="Left" Margin="101,217,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.595,0.632" Background="#ac182e" BorderBrush="White" Click="passWordButton"/>
+
+        <TextBox x:Name="passwordEntry" HorizontalAlignment="Left" Margin="21,180,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="userEntry" HorizontalAlignment="Left" Margin="21,162,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.489,0.548"/>
     </Grid>
 </Window>
